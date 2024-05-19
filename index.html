@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AreeB Tours & Travel</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+    .btn-primary-change {
+        color: gray;
+        border-color: gray;
+    }
+</style>
+</head>
+<body>
+
+
+
+    <header>
+        <div id="top_info">
+            <i class="fa fa-phone"></i> +92-3254642489 <i style="margin-left: 2%" class="far fa-envelope" aria-hidden="true"></i> imareebkhan.25@gmail.com
+            <a style="margin-left: 8%; color: #fff" href="#"><i class="fab fa-facebook"></i></a>
+            <a style="margin-left: 1%; color: #fff" href="#"><i class="fab fa-instagram"></i></a>
+            <a style="margin-left: 1%; color: #fff" href="#"><i class="fab fa-twitter"></i></a>
+            <a style="margin-left: 1%; color: #fff" href="#"><i class="fab fa-pinterest" aria-hidden="true"></i></a>
+            <a style="margin-left: 1%; color: #fff" href="#"><i class="fab fa-google-plus" aria-hidden="true"></i></a>
+            <!-- Add other social icons here -->
+            <i style="margin-left: 10%" class="fas fa-user"></i><span style="margin-left: 1%"> My Account </span> <span style="margin-left: 1%">  | </span> <span style="margin-left: 1%">  <i class="fas fa-heart"></i> </span> <span style="margin-left: 1%">  Wishlist </span> <span style="margin-left: 1%">  |</span> <span style="margin-left: 1%">  <i class="fas fa-lock"></i> </span> <span style="margin-left: 1%">  Login </span> <span style="margin-left: 1%">  | </span> <span style="margin-left: 1%">  <i class="fas fa-shopping-cart"></i> </span> <span style="margin-left: 1%"> Cart </span>
+        </div>
+
+    </header>
+    <nav>
+<!--        <div class="logo">-->
+<!--            <img src="logo.jpeg" style="width: 25%" alt="Casia Travel & Tours Logo">-->
+<!--        </div>-->
+        <ul>
+            <li><img src="logo.jpeg" style="width: 25%" alt="Casia Travel & Tours Logo"></li>
+            <li class="nav-margin"><a href="#about">Home</a></li>
+            <li class="nav-margin"><a href="#about">Destination</a></li>
+            <li class="nav-margin"><a href="#about">Listing</a></li>
+            <li class="nav-margin"><a href="#about">Activities</a></li>
+            <li class="nav-margin"><a href="#about">Bookings</a></li>
+            <li class="nav-margin"><a href="#about">Pages</a></li>
+            <li class="nav-margin"><a href="#about">Shop</a></li>
+            <li class="nav-margin"><a href="#tours">Blog</a></li>
+            <li class="nav-margin"><i style="color: #00c0ff" class="fa fa-search" aria-hidden="true"></i></li>
+        </ul>
+    </nav>
+
+<!--    <section id="hero">-->
+<!--        <h1>Lets Travel Together</h1>-->
+<!--        <p style="padding-right: 50%;">Discover your next great adventure, become part of our journey and explore the world with us.</p>-->
+<!--    </section>-->
+    <section id="hero">
+        <div class="content">
+            <h1>Lets Travel Together</h1>
+            <p>Discover your next great adventure, become part of our journey and explore the world with us.</p>
+        </div>
+    </section>
+    <section id="booking">
+        <div class="container">
+            <div class="booking-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <select id="tour" class="input-small">
+                            <option value="tour1">Select Tour</option>
+                            <option value="tour2">Tour 2</option>
+                            <!-- Add more tour options here -->
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="date" id="checkin" class="input-small" placeholder="checkin">
+                    </div>
+
+                    <div class="form-group">
+                        <select id="adults" class="input-small">
+                            <option value="1">Adults</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">More</option>
+                            <!-- Add more options if needed -->
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <select id="kids" class="input-small">
+                            <option value="0">Kids</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">More</option>
+                            <!-- Add more options if needed -->
+                        </select>
+                    </div>
+                    <button class="btn-primary" style="    height: 40px;">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="why-choose-us">
+        <div class="container">
+            <h2 style="color: black">Why Choose Us</h2>
+            <hr class="custom-hr">
+            <div class="card-container choose-card-container">
+                <div class="card choose-card" style="border: none;">
+                    <img src="bag.png" alt="Icon 1">
+                    <h3>Exclusive Package</h3>
+                    <p>Our top priority is to provide you with the best quality service. asdjkhasjdkhas</p>
+                </div>
+                <div class="card choose-card" style="border: none;">
+                    <img src="plane.jpg" alt="Icon 2">
+                    <h3>Peace of Mind</h3>
+                    <p>Our experienced guides will make your travel experience memorable. sdad </p>
+                </div>
+                <div class="card choose-card" style="border: none;">
+                    <img src="map.jpg" alt="Icon 3">
+                    <h3>Best Travel Guide</h3>
+                    <p>We offer customized tour packages tailored to your preferences. asdjhakjsdhasd</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="best-journey">
+        <div id="overlay"></div>
+        <div class="video-icon">
+            <i class="fas fa-play"></i>
+        </div>
+        <h2>Best Journey</h2>
+    </section>
+    <section id="cards-section-des">
+        <div class="container">
+            <h2 style="color: black; text-align: center">Popular Destinations</h2>
+            <hr class="custom-hr custom-hr-second">
+            <br>
+            <!-- First Row -->
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <div class="card img-fluid">
+                        <img class="card-img-top" src="auss.jpeg" alt="Card image" style="width:100%">
+                        <div class="card-img-overlay custome">
+                            <h4 class="card-title" style="color: white">Australia</h4>
+                            <p style="color: white">1 tour</p>
+                            <button class="btn-primary" style="background-color: #00c0ff"> Discover -> </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card img-fluid">
+                        <img class="card-img-top" src="aus2.jpeg" alt="Card image" style="width:100%">
+                        <div class="card-img-overlay custome">
+                            <h4 class="card-title" style="color: white">France</h4>
+                            <p style="color: white">2 tour</p>
+                        </div>
+                    </div>
+                    <!-- Second Card (similar structure to the first one) -->
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card img-fluid">
+                        <img class="card-img-top" src="images/1.jpg" alt="Card image" style="width:100%">
+                        <div class="card-img-overlay custome">
+                            <h4 class="card-title" style="color: white">Rome</h4>
+                            <p style="color: white">2 tour</p>
+                        </div>
+                    </div>
+                    <!-- Third Card (similar structure to the first one) -->
+                </div>
+            </div>
+
+            <!-- Second Row -->
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <div class="card img-fluid">
+                        <img class="card-img-top" src="2.jpg" alt="Card image" style="width:100%">
+                        <div class="card-img-overlay custome">
+                            <h4 class="card-title" style="color: white">Singapore</h4>
+                            <p style="color: white">3 tour</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card img-fluid">
+                        <img class="card-img-top" src="3.jpg" alt="Card image" style="width:100%">
+                        <div class="card-img-overlay custome">
+                            <h4 class="card-title" style="color: white">Tokyo</h4>
+                            <p style="color: white">1 tour</p>
+                        </div>
+                    </div>
+                    <!-- Second Card (similar structure to the first one) -->
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card img-fluid">
+                        <img class="card-img-top" src="2.jpg" alt="Card image" style="width:100%">
+                        <div class="card-img-overlay custome">
+                            <h4 class="card-title" style="color: white">Cairo</h4>
+                            <p style="color: white">0 tour</p>
+                        </div>
+                    </div>
+                    <!-- Third Card (similar structure to the first one) -->
+                </div>
+                <!-- Repeat the same structure for the second row -->
+            </div>
+
+        </div>
+    </section>
+    <section id="overlay-section">
+        <h2 style="color: black">Popular Tour Packages</h2>
+        <hr class="custom-hr custom-hr-third">
+        <br>
+        <div class="container" style="margin-top: 2%">
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="tour.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body" style="color: black">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p class="card-text" style="text-align: left;">Heaven- Dehradun to Harsil 5 days. <br> Travel with stay free.</p>
+                                <p class="card-text" style="text-align: right;"><span style="color: grey">From</span> <br><b><span style="color:#00c0ff; font-size: 20px"> $1500</span></b></p>
+                            </div>
+
+                            <p style="text-align: left;"><small class="text-muted"><i class="fa fa-clock" aria-hidden="true" style="color: #00c0ff"></i> 5 Days </small></p>
+                            <p style="text-align: left;"><small class="text-muted">
+                                <i class="fa fa-star gold" aria-hidden="true"></i>
+                                <i class="fa fa-star gold" aria-hidden="true"></i>
+                                <i class="fa fa-star gold" aria-hidden="true"></i>
+                                <i class="fa fa-star gold" aria-hidden="true"></i>
+                                <i class="fa fa-star " aria-hidden="true"></i>(3k Reviews)</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="tour2.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body" style="color: black">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p class="card-text" style="text-align: left;">Bali ex Lucknow , outstanding <br> Extravagent points and beaches</p>
+                                <p class="card-text" style="text-align: right;"><span style="color: grey">From</span> <br><b><span style="color:#00c0ff; font-size: 20px"> $1500</span></b></p>
+                            </div>
+
+                            <p style="text-align: left;"><small class="text-muted"><i class="fa fa-clock" aria-hidden="true" style="color: #00c0ff"></i> 5 Days </small></p>
+                            <p style="text-align: left;"><small class="text-muted">
+                                <i class="fa fa-star gold" aria-hidden="true"></i>
+                                <i class="fa fa-star gold" aria-hidden="true"></i>
+                                <i class="fa fa-star gold" aria-hidden="true"></i>
+                                <i class="fa fa-star gold" aria-hidden="true"></i>
+                                <i class="fa fa-star " aria-hidden="true"></i>(9k Reviews)</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="tour3.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body" style="color: black">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p class="card-text" style="text-align: left;">Maldives- Group tour package <br> Best point for honeymoon</p>
+                                <p class="card-text" style="text-align: right;"><span style="color: grey">From</span> <br><b><span style="color:#00c0ff; font-size: 20px"> $1500</span></b></p>
+                            </div>
+
+                            <p style="text-align: left;"><small class="text-muted"><i class="fa fa-clock" aria-hidden="true" style="color: #00c0ff"></i> 5 Days </small></p>
+                            <p style="text-align: left;"><small class="text-muted">
+                                <i class="fa fa-star gold" aria-hidden="true"></i>
+                                <i class="fa fa-star gold" aria-hidden="true"></i>
+                                <i class="fa fa-star gold" aria-hidden="true"></i>
+                                <i class="fa fa-star gold" aria-hidden="true"></i>
+                                <i class="fa fa-star " aria-hidden="true"></i>(5k Reviews)</small></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="gallery-heading">
+        <h2 style="color: black;text-align: center">Our gallery</h2>
+        <hr class="custom-hr custom-hr-forth">
+        <br>
+    </section>
+    <section id="gallery">
+            <div class="row">
+                <div class="card-group">
+                    <div class="card">
+                        <img class="card-img-top" src="Gallery 1.jpeg" alt="Card image cap">
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="Gallery 2.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="Gallery 3.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="Gallery 4.jpg" alt="Card image cap">
+                    </div>
+                </div>
+            </div>
+        <div class="row">
+                <div class="card-group">
+                    <div class="card">
+                        <img class="card-img-top" src="Gallery 5.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="Gallery 6.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="Gallery 7.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="Gallery 8.jpg" alt="Card image cap">
+                    </div>
+                </div>
+            </div>
+        <div style="text-align: center;margin-top: 2%;">
+            <button  class="btn-primary" style="background-color: #00c0ff;width: 10%"> view more</button>
+        </div>
+    </section>
+    <section id="our-blog">
+        <h2 style="color: black;text-align: center">Our Blog</h2>
+        <hr class="custom-hr custom-hr-fifth">
+        <br>
+        <div class="container">
+            <div class="card-deck">
+                <div class="card" style="border: none;">
+                    <div class="image-container">
+                        <img class="card-img-top" src="blog2.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">The best of the best Transport means</h5>
+                        <p class="card-text"><small class="text-muted"><i class="fa fa-user" aria-hidden="true"></i> Alex Davies &nbsp; &nbsp; <i class="fa fa-clock" aria-hidden="true"></i> 22 JAN 2017</small></p>
+
+                        <p class="card-text" style="color: gray">We've got the best transport via road or aur for your safe and pleasant journey over the globe.</p>
+                        <button type="button" class="btn btn-outline-primary btn-primary-change">Read More</button>
+                    </div>
+                </div>
+                <div class="card" style="border: none;">
+                    <div class="image-container">
+                        <img class="card-img-top" src="Gallery 4.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">The resorts and hotels.</h5>
+                        <p class="card-text"><small class="text-muted"><i class="fa fa-user" aria-hidden="true"></i> John Wilson &nbsp; &nbsp; <i class="fa fa-clock" aria-hidden="true"></i> 22 JAN 2017</small></p>
+
+                        <p class="card-text" style="color: gray">Long journey and the royal and comfortable apartments for stay, We've it all.</p>
+                        <button type="button" class="btn btn-outline-primary btn-primary-change">Read More</button>
+                    </div>
+                </div>
+                <div class="card" style="border: none;">
+                    <div class="image-container">
+                        <img class="card-img-top" src="blog.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Reliable flights and stress free boarding. </h5>
+                        <p class="card-text"><small class="text-muted"><i class="fa fa-user" aria-hidden="true"></i> Marcus Warner &nbsp; &nbsp; <i class="fa fa-clock" aria-hidden="true"></i> 22 JAN 2017</small></p>
+
+                        <p class="card-text" style="color: gray">With love and care, it is our duty to arrange the safest flights for you with very kind staff.</p>
+                        <button type="button" class="btn btn-outline-primary btn-primary-change">Read More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="client-testimonials">
+        <h2>Client Testimonials</h2>
+        <hr class="custom-hr custom-hr-six">
+        <br>
+        <div class="container" style="margin-top: 2%">
+            <div class="row mb-4">
+                <div class="col-md-1" style="z-index: 2;padding-top: 10%;position: relative;">
+                    <i class="fa fa-arrow-circle-left" aria-hidden="true" style="color: white; font-size: 24px;"></i>
+                </div>
+                <div class="col-md-5" style="z-index: 2">
+                    <div class="card" style="max-width: 600px;background: transparent;border-color: white;">
+                        <div class="d-flex align-items-center">
+                            <div style="flex: 1;margin-bottom: 5%;">
+                                <img src="images/profile.jpg" class="rounded-circle" style="width: 100px; height: 100px; object-fit: cover;" alt="...">
+                            </div>
+                            <div class="card-body" style="color: white; flex: 2;text-align: left;">
+                                <h5 class="card-title">Emma Watson</h5>
+                                <p class="card-text" style="color: gray">British Actress</p>
+                                <p style="text-align: left;">
+                                    <small class="text-muted">
+                                        <i class="fa fa-star gold" aria-hidden="true"></i>
+                                        <i class="fa fa-star gold" aria-hidden="true"></i>
+                                        <i class="fa fa-star gold" aria-hidden="true"></i>
+                                        <i class="fa fa-star gold" aria-hidden="true"></i>
+                                        <i class="fa fa-star gold" aria-hidden="true"></i>
+                                    </small>
+                                </p>
+                                <p class="card-text" style="color: gray">
+                                    "Exceptional service and well-organized itineraries made our trip unforgettable. Highly recommend this travel and tours company for a hassle-free and memorable experience!"
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5" style="z-index: 2;">
+                    <div class="card" style="max-width: 600px;background: transparent;border-color: white;">
+                        <div class="d-flex align-items-center">
+                            <div style="flex: 1;margin-bottom: 5%;">
+                                <img src="images/profile2.png" class="rounded-circle" style="width: 100px; height: 100px; object-fit: cover;" alt="...">
+                            </div>
+                            <div class="card-body" style="color: white; flex: 2;text-align: left;">
+                                <h5 class="card-title">Zendya</h5>
+                                <p class="card-text" style="color: gray">Pop Singer</p>
+                                <p style="text-align: left;">
+                                    <small class="text-muted">
+                                        <i class="fa fa-star gold" aria-hidden="true"></i>
+                                        <i class="fa fa-star gold" aria-hidden="true"></i>
+                                        <i class="fa fa-star gold" aria-hidden="true"></i>
+                                        <i class="fa fa-star gold" aria-hidden="true"></i>
+                                        <i class="fa fa-star gold" aria-hidden="true"></i>
+                                    </small>
+                                </p>
+                                <p class="card-text" style="color: gray">
+                                    "Outstanding service and meticulously planned tours made our trip truly memorable. Highly recommend this travel company for a seamless and enriching travel experience!"
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1" style="z-index: 2;padding-top: 10%;position: relative;">
+                    <i class="fa fa-arrow-circle-right" aria-hidden="true" style="color: white;font-size: 24px;"></i>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="our-client-logo">
+        <h2 style="color: black;text-align: center">Our Client Logo</h2>
+        <hr class="custom-hr custom-hr-seven">
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="card-group">
+                    <div class="card" style="margin: 5px;height: 70%;">
+                        <img class="card-img-top" src="images/client-logo.jpg" style="height: 100%;" alt="Card image cap">
+                    </div>
+                    <div class="card" style="margin: 5px;height: 70%;">
+                        <img class="card-img-top" src="images/client-logo2.jpg" style="height: 100%;" alt="Card image cap">
+                    </div>
+                    <div class="card" style="margin: 5px;height: 70%;">
+                        <img class="card-img-top" src="images/client-logo3.jpg" style="height: 100%;" alt="Card image cap">
+                    </div>
+                    <div class="card" style="margin: 5px;height: 70%;">
+                        <img class="card-img-top" src="images/client-logo4.jpg" style="height: 100%;" alt="Card image cap">
+                    </div>
+                    <div class="card" style="margin: 5px;height: 70%;">
+                        <img class="card-img-top" src="images/client-logo2.jpg" style="height: 100%;" alt="Card image cap">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="join-our-news-letter" style="background-color: #00c0ff; padding: 40px 0;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h4 style="color: white;">Join Our Newsletter</h4>
+                    <p style="color: white;">Stay updated with our latest news and promotions.</p>
+                </div>
+                <div class="col-md-6">
+                    <form>
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Email" style="background-color: #00c0ff; color: white; ::placeholder { color: white; }">
+                            <div class="input-group-append" style="margin-left: 10px;">
+                                <button class="btn btn-light" type="submit">Subscribe</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="footer-menu" style="background-color: #222; padding: 40px 0; margin-top: 0px">
+        <div class="container">
+            <div class="row" style="color: white;">
+                <div class="col-md-3">
+                    <h5>Cassia</h5>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.<br> Nunc gravida.</p>
+                    <a style="color: #fff" href="#"><i class="fab fa-facebook"></i></a>
+                    <a style="margin-left: 2%; color: #fff" href="#"><i class="fab fa-instagram"></i></a>
+                    <a style="margin-left: 2%; color: #fff" href="#"><i class="fab fa-twitter"></i></a>
+                    <a style="margin-left: 2%; color: #fff" href="#"><i class="fab fa-pinterest" aria-hidden="true"></i></a>
+                    <a style="margin-left: 2%; color: #fff" href="#"><i class="fab fa-google-plus" aria-hidden="true"></i></a>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contact Us</h5>
+                    <br>
+                    <p><i class="fa fa-map-marker" style="color: #00c0ff" aria-hidden="true"></i>&nbsp; House No 08, Road No 08,<br><br>
+                    Din Bari, Usa, Singapore</p>
+                    <p>
+                        <i class="fa fa-envelope" style="color: #00c0ff" aria-hidden="true"></i> imareebkhan.25@gmail.com
+                    </p>
+                    <p>
+                        <i class="fa fa-phone" style="color: #00c0ff" aria-hidden="true"></i> (+92-3254642489)
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="color: white;">Quick Links</h5>
+                    <br>
+                    <p>
+                        <span style="color: #00c0ff"> > </span> &nbsp Home
+                    </p>
+                    <p>
+                        <span style="color: #00c0ff"> > </span> &nbsp Destination
+                    </p>
+                    <p>
+                        <span style="color: #00c0ff"> > </span> &nbsp Listing
+                    </p>
+                    <p>
+                        <span style="color: #00c0ff"> > </span> &nbsp Bookings
+                    </p>
+                    <p>
+                        <span style="color: #00c0ff"> > </span> &nbsp Blog
+                    </p>
+                    <p>
+                        <span style="color: #00c0ff"> > </span> &nbsp Contact
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="color: white;">Instagram</h5>
+                    <div class="card-group" style="margin-bottom: 20px;border: none;border-color: #111111">
+                        <div class="card">
+                            <img class="card-img-top" src="Gallery 3.jpg" style="height: 120%;" alt="Card image cap">
+                        </div>
+                        <div class="card" style="margin-left: 20px;">
+                            <img class="card-img-top" src="Main.png" style="height: 120%;" alt="Card image cap">
+                        </div>
+                        <div class="card" style="margin-left: 20px;">
+                            <img class="card-img-top" src="aus.webp" style="height: 120%;" alt="Card image cap">
+                        </div>
+                    </div>
+                    <div class="card-group" >
+                        <div class="card">
+                            <img class="card-img-top" src="hero.jpg" style="height: 120%;" alt="Card image cap">
+                        </div>
+                        <div class="card" style="margin-left: 20px;">
+                            <img class="card-img-top" src="korea.jpeg" style="height: 120%;" alt="Card image cap">
+                        </div>
+                        <div class="card" style="margin-left: 20px;">
+                            <img class="card-img-top" src="Gallery 7.jpg" style="height: 120%;" alt="Card image cap">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer style="background-color:#111;">
+        <p>© 2024 Areeb Travel & Tours. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
